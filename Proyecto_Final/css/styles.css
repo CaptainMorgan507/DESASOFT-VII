@@ -1,0 +1,661 @@
+/*Todas las paginas tendran este color de fondo y establescemos la fuente de texto*/
+body{
+    font-family: sans-serif;
+    background-color: #F5F5F5;
+}
+
+
+/*Ajustes de Vista para la parte superior de todas las paginas, que tienen el logo.*/
+.top_logo {
+    background-color: #1E2749;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    position: fixed;
+    top:0;
+}
+
+.top_logo_title{
+    color:white;
+    margin-top: 1rem;
+    justify-content: left;
+    padding: 1rem;
+}
+.top_logo_image{
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right:1rem;
+
+}
+.top_logo img{
+    max-width: 20rem;
+
+}
+
+/*Ajustes para las paginas de Login*/
+
+.loginPage{
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.loginPage img{
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    width: 10rem;
+}
+
+.login_form {
+    background-color: #30343F;
+    border-radius: 0.5rem;
+}
+
+.login_form form{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    
+}
+.login_form p1{
+    margin-top: 0.5rem;
+    color:white;
+}
+.login_form a{
+    color: white;
+    
+}
+.login_form input{
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.login_form input[type=submit]{
+    border-radius: 0.5rem;
+    border-color: #E4D9FF;
+    background-color: #E4D9FF;
+    font-weight: bold;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem  ;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.login_form input[type=submit]:hover{
+    border-color: white;
+    background-color: white;
+    color:black;
+   
+}
+
+.login_form_row{
+    display: flex;
+    flex-direction: row;
+}
+.login_form_row input{
+    margin-left: 1rem;
+    justify-content: left;
+}
+
+.login_form label{
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
+    color: white;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.login_form textarea{
+    font-size:1.2rem;
+    margin-left:0.5rem;
+    margin-top: 0.5rem;
+}
+
+/*Los siguientes cambios son para la pagina principal luego del inicio de sesión*/
+.MainPage_MenuBar{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    float:center;
+    margin-left:19%;
+    padding: 0.5rem;
+    background-color: #273469;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: fixed;
+    top:10rem;
+}
+.MainPage_MenuBar a{
+    background-color: #FAFAFF;
+    color:black;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-color: #FAFAFF;
+
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.MainPage_MenuBar a:hover{
+    background-color:#E4D9FF
+}
+
+.MainPage_Menu_Left{
+    margin-left:2rem;
+    padding:1rem;
+    float: left;
+}
+
+.MainPage_Menu_Right{
+    float: right;
+    margin-left:30rem;
+    margin-right:2rem;
+    padding:1rem;
+}
+
+/*La pagina de Medicamentos*/
+
+.MainPage_Title{
+   margin-top: 15rem;
+   text-align: center;
+}
+
+.Medic_body{
+    background-color: #E4D9FF;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    float:center;
+    margin:auto;
+    width:60%;
+    justify-content: center;
+}
+
+.Medic_Filter{
+    padding: 1rem;
+    background-color: #30343F;
+    border-radius: 0.5rem;
+    align-self: center;
+    font-size: 1.2rem;
+}
+.Medic_Filter select, 
+.Medic_Filter input{
+    font-size: 1.2rem;
+    padding:0.5rem;
+    border-radius: 0.5rem;
+}
+.Medic_Filter label{
+    color: white;
+    font-size: 1.2rem;
+}
+.Medic_Filter input[type=submit]{
+    font-weight: bold;
+    background-color: #FAFAFF;
+    background-color: #FAFAFF;
+}
+
+.Medic_Filter input[type=submit]:hover{
+    background-color: #E4D9FF;
+}
+
+.Medic_table{
+    padding:1rem;
+    width: 100%;
+    align-self: center;
+}
+.Medic_table table tr{
+    font-size: 2.5rem;
+    padding:1rem;
+}
+.Medic_table table th{
+    margin:0.2rem;
+    padding:1rem;
+    font-size: 1.2rem;
+}
+
+
+
+.Medic_table td{
+    margin:0.2rem;
+    padding:1rem;
+    border:0.05rem solid black;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.Medic_table a{
+    color:black;
+    background-color: #FAFAFF;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.Medic_Footer{
+    display: flex;
+    flex-direction: row;
+    margin-left:1rem;
+    padding:1rem;
+}
+
+.Medic_Footer input{
+    width:2rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    background-color: #FAFAFF;
+}
+
+.Medic_Footer input[type=submit]{
+    width:4rem;
+    border-color: #FAFAFF;
+}
+
+.Medic_Footer input[type=submit]:hover{
+    border-color: #30343F;
+    background-color: #30343F;
+    color: white;
+}
+
+.Medic_Footer_nav{
+    margin-left: 2rem;
+    display: block;
+    flex-direction: row;
+}
+
+.Medic_Footer a{
+    margin-left:0.5rem;
+    margin-right:0.5rem;
+    padding:0.5rem;
+    width:2rem;
+    text-decoration: none;
+    background-color: #FAFAFF;
+    border-radius: 0.5rem;
+}
+
+.Medic_Footer a:hover{
+    background-color: #30343F;
+    color:white;
+}
+
+.Medic_Footer p1{
+    background-color: #30343F;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+/*Boton para nueva entrada.*/
+.Medic_new{
+    padding: 1rem;
+    background-color: #30343F;
+    border-radius: 0.5rem;
+    align-self: center;
+    font-size: 1.2rem;
+}
+ 
+.Medic_new input{
+    font-size: 1.2rem;
+    padding:0.5rem;
+    border-radius: 0.5rem;
+}
+
+.Medic_new input[type=submit]{
+    font-weight: bold;
+    background-color: #FAFAFF;
+    background-color: #FAFAFF;
+}
+
+.Medic_new input[type=submit]:hover{
+    background-color: #E4D9FF;
+}
+
+.Medic_specific{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Medic_row{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    padding:0.5rem;
+    background-color: #FAFAFF;
+    border-radius: 0.5rem;
+    max-width: 100%;
+    justify-content: left;
+}
+
+.Medic_specific label{
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.Medic_specific input{
+    padding:0.5rem;
+    background:#FAFAFF;
+    margin-left:1rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    border-color: black;
+}
+
+.Medic_specific input[type=submit]{
+    background-color: #30343F;
+    color:white;
+}
+
+.Medic_specific input[type=submit]:hover{
+    background-color: white;
+    color:black;
+}
+
+.Medic_column{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    padding:0.5rem;
+    background-color: #FAFAFF;
+    border-radius: 0.5rem;
+    max-width: 100%;
+    justify-content: left;
+}
+
+.Medic_specific p1{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+.Medic_specific p2{
+    text-align: left;
+    font-size: 1.2rem;
+
+}
+
+/*Las siguientes son para la pagina de pedidos*/
+.Delivery_body{
+    background-color: #E4D9FF;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    float:center;
+    margin:auto;
+    width:60%;
+    justify-content: center;
+}
+
+.Delivery_Filter{
+    padding: 1rem;
+    background-color: #30343F;
+    border-radius: 0.5rem;
+    align-self: center;
+    font-size: 1.2rem;
+}
+.Delivery_Filter select, 
+.Delivery_Filter input{
+    font-size: 1.2rem;
+    padding:0.5rem;
+    border-radius: 0.5rem;
+}
+.Delivery_Filter label{
+    color: white;
+    font-size: 1.2rem;
+}
+.Delivery_Filter input[type=submit]{
+    font-weight: bold;
+    background-color: #FAFAFF;
+    background-color: #FAFAFF;
+}
+
+.Delivery_Filter input[type=submit]:hover{
+    background-color: #E4D9FF;
+}
+
+.Delivery_table{
+    padding:1rem;
+    width: 100%;
+    align-self: center;
+}
+.Delivery_table table tr{
+    font-size: 2.5rem;
+    padding:1rem;
+}
+.Delivery_table table th{
+    margin:0.2rem;
+    padding:1rem;
+    font-size: 1.2rem;
+}
+
+
+
+.Delivery_table td{
+    margin:0.2rem;
+    padding:1rem;
+    border:0.05rem solid black;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.Delivery_table a{
+    color:black;
+    background-color: #FAFAFF;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.Delivery_Footer{
+    display: flex;
+    flex-direction: row;
+    margin-left:1rem;
+    padding:1rem;
+}
+
+.Delivery_Footer input{
+    width:2rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    background-color: #FAFAFF;
+}
+
+.Delivery_Footer input[type=submit]{
+    width:4rem;
+    border-color: #FAFAFF;
+}
+
+.Delivery_Footer input[type=submit]:hover{
+    border-color: #30343F;
+    background-color: #30343F;
+    color: white;
+}
+
+.Delivery_Footer_nav{
+    margin-left: 2rem;
+    display: block;
+    flex-direction: row;
+}
+
+.Delivery_Footer a{
+    margin-left:0.5rem;
+    margin-right:0.5rem;
+    padding:0.5rem;
+    width:2rem;
+    text-decoration: none;
+    background-color: #FAFAFF;
+    border-radius: 0.5rem;
+}
+
+.Delivery_Footer a:hover{
+    background-color: #30343F;
+    color:white;
+}
+
+.Delivery_Footer p1{
+    background-color: #30343F;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+/* Para el nuevo boton de crear*/
+.Delivery_new{
+    padding: 1rem;
+    background-color: #30343F;
+    border-radius: 0.5rem;
+    align-self: center;
+    font-size: 1.2rem;
+}
+ 
+.Delivery_new input{
+    font-size: 1.2rem;
+    padding:0.5rem;
+    border-radius: 0.5rem;
+}
+
+.Delivery_new input[type=submit]{
+    font-weight: bold;
+    background-color: #FAFAFF;
+    background-color: #FAFAFF;
+}
+
+.Delivery_new input[type=submit]:hover{
+    background-color: #E4D9FF;
+}
+
+
+.Delivery_specific{
+    display: flex;
+    flex-direction: column;
+ justify-content: center;
+}
+
+.Delivery_row{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;  
+
+    display: flex;
+    flex-direction: row;
+    padding:0.5rem;
+    background-color: #FAFAFF;
+    border-radius: 0.5rem;
+    max-width: 80%;
+    justify-content: left;
+}
+
+.Delivery_specific label{
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.Delivery_specific input{
+    padding:0.5rem;
+    background:#FAFAFF;
+    margin-left:1rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    border-color: black;
+}
+
+.Delivery_specific select{
+    background-color: #FAFAFF;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+}
+.Delivery_specific input[type=submit]{
+    background-color: #30343F;
+    color:white;
+}
+
+.Delivery_specific input[type=submit]:hover{
+    background-color: white;
+    color:black;
+}
+
+.Delivery_column{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+    padding:0.5rem;
+    background-color: #FAFAFF;
+    border-radius: 0.5rem;
+    max-width: 80%;
+    justify-content: left;
+}
+
+.Delivery_specific p1{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+.Delivery_specific p2{
+    text-align: left;
+    font-size: 1.2rem;
+
+}
+
+.Delivery_specific table{
+    padding:0.5rem;
+    width: 60%;
+    align-self: center;
+}
+.Delivery_specific table tr{
+    font-size: 0.6rem;
+    padding:0.5rem;
+    width: 60%;
+}
+.Delivery_specific table th{
+    margin:0.2rem;
+    padding:0.5rem;
+    font-size: 0.8rem;
+}
+
+.Delivery_specific table td{
+    margin:0.2rem;
+    padding:0.5rem;
+    border:0.05rem solid black;
+    text-align: center;
+    font-size: 0.6rem;
+}
+
+.Delivery_specific table input{
+    padding:0.2rem;
+    background:#FAFAFF;
+    margin-left:0.2rem;
+    font-size: 0.8rem;
+    border-radius: 0.5rem;
+    border-color: black;
+}
+
+.Delivery_specific input[type=button]:hover{
+    background:#30343F;
+    color: white;
+}
